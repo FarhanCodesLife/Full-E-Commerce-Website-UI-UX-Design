@@ -35,7 +35,6 @@ const Navbar = () => {
     </div>
         <div className='flex gap-4 items-center px-2 w-full  m-auto '> 
             <input type="search" className='sm:w-full border w-96   px-4 bg-transparent' />
-            {/* <p className=''>search </p> */}
             <p>cart </p>
             <p>dil </p>
         </div>
