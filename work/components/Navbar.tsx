@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className='flex justify-end items-center  px-5 w-full space-x-4  m-auto '> 
             <div className=' flex items-center px-5 border  rounded-lg '>
 
-            <input type="search" className='sm:w-full  w-96    text-black  border-transparent focus:border-transparent' placeholder='What are You Loking For ? ' /><IoIosSearch/>
+            <input type="search" className='sm:w-full  space-x-2 py-2   text-black  border-transparent focus:border-transparent' placeholder='What are You Loking For ? ' /><IoIosSearch/>
             </div>
             <p className='text-xl cursor-pointer'><FaRegHeart />
             </p>
@@ -49,7 +49,6 @@ const Navbar = () => {
         </div>
 
        </div>
-        <input type="search" className='px-2  hidden  block '  placeholder='What are You Loking For?' />
         
         
         </div>
