@@ -1,4 +1,8 @@
 import React from 'react'
+import { IoCartSharp } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
+
 
 const Navbar = () => {
   return (
@@ -17,10 +21,10 @@ const Navbar = () => {
 
 
 
-    <div className='w-full flex flex-col items-center px-5 lg:px-10 sm:w-full sm:py-4 py-2 justify-between bg-slate-400'>
+    <div className='w-full flex flex-col items-center px-5 lg:px-5 sm:w-full sm:py-4 py-2 justify-between bg--400'>
        <div className='  sm:flex-nowrap  flex-wrap flex justify-between items-center w-full'>
         <div className='font-bold items-center sm:w-full flex w-96 justify-between  '>
-                <a className='text-xl sm:text-lg cursor-pointer'>
+                <a className='text-xl sm:text-lg px-5 cursor-pointer'>
                 farhan hanif  
                 </a>
         <a className='md:hidden sm:text-sm text-lg  block'>
@@ -31,16 +35,21 @@ const Navbar = () => {
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Contect</a>
-            <a href="">Sigup</a>
+            <a href="">Signup</a>
     </div>
-        <div className='flex gap-4 items-center px-2 w-full  m-auto '> 
-            <input type="search" className='sm:w-full border w-96   px-4 bg-transparent' />
-            <p>cart </p>
-            <p>dil </p>
+        <div className='flex justify-end items-center  px-5 w-full space-x-4  m-auto '> 
+            <div className=' flex items-center px-5 border  rounded-lg '>
+
+            <input type="search" className='sm:w-full  w-96    text-black  border-transparent focus:border-transparent' placeholder='What are You Loking For ? ' /><IoIosSearch/>
+            </div>
+            <p className='text-xl cursor-pointer'><FaRegHeart />
+            </p>
+            <p className='text-xl cursor-pointer'><IoCartSharp />
+            </p>
         </div>
 
        </div>
-        <input type="search" className='px-2  hidden  block ' />
+        <input type="search" className='px-2  hidden  block '  placeholder='What are You Loking For?' />
         
         
         </div>
